@@ -434,6 +434,9 @@ class MobiBook:
             return
         if crypto_type != 2 and crypto_type != 1:
             raise DrmException(u"Cannot decode unknown Mobipocket encryption type {0:d}".format(crypto_type))
+## Removing this to enable decryption of rented books
+# WARNING: FOR ACCESSIBILITY PURPOSES ONLY
+# Any other use of this modification is expressly prohibited.
 #        if 406 in self.meta_array:
 #            data406 = self.meta_array[406]
 #            val406, = struct.unpack('>Q',data406)
