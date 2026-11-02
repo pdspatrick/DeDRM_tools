@@ -91,9 +91,9 @@ class KFXZipBook:
         print("KFX DRM voucher successfully decrypted")
 
         license_type = voucher.getlicensetype()
-        if license_type != "Purchase":
-            raise Exception(("This book is licensed as {0}. "
-                    'These tools are intended for use on purchased books.').format(license_type))
+        #if license_type != "Purchase":
+        #    raise Exception(("This book is licensed as {0}. "
+        #            'These tools are intended for use on purchased books.').format(license_type))
 
         self.voucher = voucher
 
